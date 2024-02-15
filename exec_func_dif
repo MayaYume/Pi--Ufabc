@@ -1,0 +1,12 @@
+x = 4 
+def fun(x: int)-> None:
+    print("fun: o valor de x é", x)
+    x = 99
+
+def main():
+    print("main:o valor de x é", x)
+    fun(7)
+
+main()
+print ("o valor de x é",x)
+ 
