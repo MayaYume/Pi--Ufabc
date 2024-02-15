@@ -13,19 +13,17 @@ def numeros_posteriores(numero):
     return a, b, c
 
 # Leitura de um número inteiro fornecido pelo usuário
-numero = int(input("Digite um número inteiro: "))
+numero = int(input())
 
 # Leitura da ação desejada pelo usuário ("Anteriores" ou "Posteriores")
-acao = input("Digite a ação desejada (Anteriores ou Posteriores): ")
+acao = input()
 
 # Verificação da ação desejada e impressão dos números resultantes em ordem crescente
 if acao == "Anteriores":
-    a, b, c = numeros_anteriores(numero)
-    print(c, b, a)
+    a_ant, b_ant, c_ant = numeros_anteriores(numero)
+    print(f"{c_ant}, {b_ant}, {a_ant}")
 elif acao == "Posteriores":
-    a, b, c = numeros_posteriores(numero)
-    print(a, b, c)
+    a_post, b_post, c_post = numeros_posteriores(numero)
+    print(f"{a_post}, {b_post}, {c_post}")
 else:
     print("Ação inválida. Digite 'Anteriores' ou 'Posteriores'.")
-
-
