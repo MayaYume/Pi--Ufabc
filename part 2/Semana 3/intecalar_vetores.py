@@ -1,4 +1,4 @@
-def intercalar_vetores (string_x, string_y):
+def intercalar_vetores (string_x: str, string_y: str)->[int]:
     # Dividindo as strings em listas de nÃºmeros
     vetor_x = list(map(int, string_x.split()))
     vetor_y = list(map(int, string_y.split()))
